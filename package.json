@@ -1,0 +1,29 @@
+{
+  "name": "suny-recorder",
+  "version": "1.0.0",
+  "description": "A minimal screen recording tool",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.electron-boilerplate",
+    "files": [
+      "app/",
+      "node_modules/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "buildResources": "resources"
+    },
+    "publish": null
+  },
+  "author": "Gweltaz Calori",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.0.1",
+    "electron-builder": "^20.38.5"
+  },
+  "dependencies": {}
+}
